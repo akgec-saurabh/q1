@@ -24,3 +24,8 @@ const Pagination = ({ page, totalPages, onPrev, onNext }) => {
 };
 
 export default Pagination;
+
+export const getCurrentPage = () => {
+  const urlSearchParams = new URLSearchParams(window.location.search);
+  return parseInt(urlSearchParams.get("page")) || 1;
+};

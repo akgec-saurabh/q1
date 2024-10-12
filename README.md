@@ -17,3 +17,6 @@
 
 ![alt text](image-1.png)
 ![alt text](image.png)
+
+- Pagination is not working as expected.
+- ![alt text](image-2.png)

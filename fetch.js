@@ -17,8 +17,8 @@ export const fetchEmailsDetails = async ({ page = 1, id }) => {
     `https://flipkart-email-mock.now.sh/?page=${page}`
   );
   const data = await response.json();
+  console.log(data, page);
 
   const email = data.list.find((email) => email.id === id);
-
   return { subject: email.subject, date: email.date, name: email.from.name };
 };
