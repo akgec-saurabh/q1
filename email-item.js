@@ -7,10 +7,11 @@ const EmailItem = ({
   short_description,
   isRead,
   isFavorite,
+  onClick,
 }) => {
   const emailItem = document.createElement("div");
   emailItem.classList.add("email-item");
-
+  emailItem.addEventListener("click", () => onClick());
   const imageContainer = document.createElement("div");
   imageContainer.classList.add("email-item-image");
 
